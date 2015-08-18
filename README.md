@@ -5,8 +5,9 @@ auto layout menu icon for iPhone or iPad
 
 ```obj-c
 
-        ZFMenuItem *menuItem = [ZFMenuItem  initWithTitle:@"item1"
-                                                imageName:@"usedes_normal"
-                                        selectedImageName:@"usedes_normal"
-                                           viewController:nil];
+    UIViewController *viewController = [[UIViewController alloc] init];
+    ZFMenuItem *menuItem = [ZFMenuItem  initWithTitle:@"item1"
+                                            imageName:@"usedes_normal"
+                                    selectedImageName:@"usedes_normal"
+                                       viewController:viewController];
 ```
