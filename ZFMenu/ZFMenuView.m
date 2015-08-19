@@ -304,9 +304,11 @@
     
     _pageControl = [UIPageControl new];
     if (totalPage > 1) {
-        _pageControl.backgroundColor = [UIColor lightGrayColor];
+//        _pageControl.backgroundColor = [UIColor lightGrayColor];
         _pageControl.numberOfPages = totalPage;
         _pageControl.currentPage = 0;
+        _pageControl.currentPageIndicatorTintColor = [UIColor blueColor];
+        _pageControl.pageIndicatorTintColor = [UIColor grayColor];
         //增加事件
         [_pageControl addTarget:self action:@selector(valueChange:) forControlEvents:UIControlEventValueChanged];
         [self addSubview:_pageControl];
@@ -519,6 +521,7 @@
         [self layoutItems];
         
     }
+
     currentPage = page;
     _pageControl.currentPage = page;
 }

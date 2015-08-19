@@ -89,7 +89,7 @@
     }];
     
     [itemLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(icon.mas_bottom).offset(5);
+        make.top.equalTo(icon.mas_bottom);
         make.centerX.equalTo(self);
         //项目特殊要求 5个占一行
         if(itemLabel.text.length == 5)
